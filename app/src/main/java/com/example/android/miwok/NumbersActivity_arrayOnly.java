@@ -15,50 +15,33 @@
  */
 package com.example.android.miwok;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class NumbersActivity extends AppCompatActivity {
+public class NumbersActivity_arrayOnly extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
-        
-        ArrayList<String> englishTranslation = new ArrayList<String>();
-        englishTranslation.add("one");
-        englishTranslation.add("two");
-        englishTranslation.add("three");
-        englishTranslation.add("four");
-        englishTranslation.add("five");
-        englishTranslation.add("six");
-        englishTranslation.add("eight");
-        englishTranslation.add("nine");
-        englishTranslation.add("ten");
 
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-//        TextView wordView = new TextView((this));
-//        wordView.setText(englishTranslation.get(0));
-//        rootView.addView(wordView);
+        String[] englishTranslation = new String[10];
+        englishTranslation[0]= "one";
+        englishTranslation[1]= "two";
+        englishTranslation[2]= "three";
+        englishTranslation[3]= "four";
+        englishTranslation[4]= "five";
+        englishTranslation[5]= "six";
+        englishTranslation[6]= "seven";
+        englishTranslation[7]= "eight";
+        englishTranslation[8]= "nine";
+        englishTranslation[9]= "ten";
 
-        for (int i = 0; i < englishTranslation.size(); i++) {
+        Log.v("NumbersActivity", "Word at index 0: " + englishTranslation[0]);
+        Log.v("NumbersActivity", "Word at index 1: " + englishTranslation[1]);
 
-            TextView wordView = new TextView((this));
-            wordView.setText(englishTranslation.get(i));
-            rootView.addView(wordView);
-
-        }
-
-
-//        while (index < 4) {
-//            Log.i("NumbersActivity", "Word at index 0: " + englishTranslation.get(index));
-//            index++;
-//        }
 
         String[] miwokTranslation = new String[10];
         miwokTranslation[0]= "lutti";
