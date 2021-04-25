@@ -25,7 +25,7 @@ public class NumbersActivity_arrayOnly extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers);
+        setContentView(R.layout.word_list);
 
         String[] englishTranslation = new String[10];
         englishTranslation[0]= "one";
